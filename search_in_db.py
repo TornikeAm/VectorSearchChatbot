@@ -48,6 +48,5 @@ class ProductSearch:
         other_columns['Score'] = closest_rows['score'].tolist()
         return product_names, other_columns
 
-# Example usage:
 product_search = ProductSearch(names)
 
