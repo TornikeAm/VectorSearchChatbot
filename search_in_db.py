@@ -10,7 +10,7 @@ class ProductSearch:
         self.df = df
         self.nlp = spacy.load("en_core_web_md")
         self.d = 300
-        self.index = faiss.IndexFlatL2(self.d)
+        self.index = faiss.IndexFlatIP(self.d)
         self.embeddings = self.add_embeddings_to_index()
 
     def get_spacy_embedding(self, product_name):
